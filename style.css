@@ -1,0 +1,16 @@
+div.alignment {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-row-gap: 15px;
+    grid-column-gap: 5px;
+    justify-content: center;
+}
+
+div.alignment label {
+    text-align: right;
+}
+
+div.alignment input.size {
+    width: fit-content;
+    margin-top: 120px;
+}

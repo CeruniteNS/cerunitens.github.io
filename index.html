@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <link></html>li
-    <form>
-        <p>Enter Your Info: <input id="keyword" type="text"></input></p>
-        <p>Choose Best Answer: <select name="fruit" id="fruit"></select></p>
-        <input id="submit" type="button" value="Submit"></input>
-    </form>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="form.js"></script>
+    <div class="alignment">
+        <label>Enter Your Info: </label>
+        <input id="keyword" type="text"></input>
+
+        <label>Choose Best Answer: </label>
+        <select name="fruit" id="fruit">
+            <option value="none" selected disabled hidden>Please Choose:</option>
+        </select>
+
+        <label></label>
+        <input id="submit" class="size" type="button" value="Submit"></input>
+    </div>
 </html>
