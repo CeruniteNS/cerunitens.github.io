@@ -2,17 +2,27 @@
 <html>
     <link rel="stylesheet" href="style.css"></link>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-database-compat.js"></script>
     <script src="form.js"></script>
-    <div class="alignment">
+    <form>
         <label>Enter Your Info: </label>
         <input id="keyword" type="text"></input>
 
         <label>Choose Best Answer: </label>
         <select name="fruit" id="fruit">
-            <option value="none" selected disabled hidden>Please Choose:</option>
+            <option value="none" selected disabled hidden>Please Choose...</option>
+            <optgroup label="Suggested:"></optgroup>
+            <optgroup label="Other Options:">
+                <option value="apple">Apple</option>
+                <option value="pear">Pear</option>
+                <option value="orange">Orange</option>
+                <option value="banana">Banana</option>
+                <option value="strawberry">Strawberry</option>
+            </optgroup>
         </select>
 
         <label></label>
         <input id="submit" class="size" type="button" value="Submit"></input>
-    </div>
+    </form>
 </html>
